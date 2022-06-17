@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>가상화폐 시세 조회 웹서비스</title>
+		<meta charset="EUC-KR">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<table class="table table-striped">
+				<thead>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p style="font-size:300%; text-shadow: 2px 2px 2px #000">가상화폐 시세 조회 웹서비스</p>
+					<p style="float:right; font-size:200%">기준 시간 : {{now}}</p>
+					<p>
+					<tr>
+					<td><B>코인</B></td>
+					<td><B>현재가(원)</B></td>
+					<td><B>24시간 변동률</B></td>
+					<td><B>1시간 변동률</B></td>
+					<td><B>30분 변동률</B></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<img src="/static/img/비트코인.jpg" alt="비트코인">
+							{{name1}}
+						</td>
+						<td>{{trade_price1}}</td>
+						<td>{{close1}}%</td>
+						<td>{{scal1}}%</td>
+						<td>{{sca1}}%</td>
+
+					</tr>
+					<tr>
+						<td>
+							<img src="/static/img/이더리움.jpg" alt="이더리움">
+							{{name2}}
+						</td>
+						<td>{{trade_price2}}</td>
+						<td>{{close2}}%</td>
+						<td>{{scal2}}%</td>
+						<td>{{scal2}}%</td>
+
+					</tr>
+					<tr>
+						<td>
+							<img src="/static/img/네오.jpg" alt="네오">
+							{{name3}}
+						</td>
+						<td>{{trade_price3}}</td>
+						<td>{{close3}}%</td>
+						<td>{{scal3}}%</td>
+						<td>{{scal3}}%</td>
+
+					</tr>
+					<tr>
+						<td>
+							<img src="/static/img/메탈.jpg" alt="메탈">
+							{{name4}}
+						</td>
+						<td>{{trade_price4}}</td>
+						<td>{{close4}}%</td>
+						<td>{{scal4}}%</td>
+						<td>{{scal4}}%</td>
+
+					</tr>
+					<tr>
+						<td>
+							<img src="/static/img/라이트코인.jpg" alt="라이트코인">
+							{{name5}}
+						</td>
+						<td>{{trade_price5}}</td>
+						<td>{{close5}}%</td>
+						<td>{{scal5}}%</td>
+						<td>{{scal5}}%</td>
+
+					</tr>
+				</p>
+				</tbody>
+			</table>
+			<p style="float:right; padding: 10px 50px 10px 50px">
+				<button onClick="window.location.reload()">갱신하기</button>
+			</p>
+		</div>
+	</body>
