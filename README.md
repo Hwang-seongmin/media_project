@@ -1,4 +1,4 @@
-# Media_Project
+# Media Project
 
 ## Credits
 - 201721063 Seong-min Hwang
